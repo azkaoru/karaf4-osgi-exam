@@ -1,0 +1,598 @@
+20:54:23.039 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+20:54:23.067 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+20:54:23.362 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+20:54:27.437 [main] WARN  o.o.p.u.m.i.AetherBasedResolver - Error resolving artifact org.apache.karaf:apache-karaf:zip:${dependency.karaf.version}: [Could not find artifact org.apache.karaf:apache-karaf:zip:${dependency.karaf.version} in jboss-eap-repository (file:/c:/jboss-eap-6.3.0.GA-maven-repository/), Could not find artifact org.apache.karaf:apache-karaf:zip:${dependency.karaf.version} in jboss-community-repository (http://repository.jboss.org/nexus/content/groups/public/), Could not find artifact org.apache.karaf:apache-karaf:zip:${dependency.karaf.version} in redhat-techpreview-all-repository (http://maven.repository.redhat.com/techpreview/all/), Could not find artifact org.apache.karaf:apache-karaf:zip:${dependency.karaf.version} in jboss-nexus-ea (https://repository.jboss.org/nexus/content/repositories/ea/), Could not find artifact org.apache.karaf:apache-karaf:zip:${dependency.karaf.version} in central (http://repo1.maven.org/maven2/)]
+java.io.IOException: Error resolving artifact org.apache.karaf:apache-karaf:zip:${dependency.karaf.version}: [Could not find artifact org.apache.karaf:apache-karaf:zip:${dependency.karaf.version} in jboss-eap-repository (file:/c:/jboss-eap-6.3.0.GA-maven-repository/), Could not find artifact org.apache.karaf:apache-karaf:zip:${dependency.karaf.version} in jboss-community-repository (http://repository.jboss.org/nexus/content/groups/public/), Could not find artifact org.apache.karaf:apache-karaf:zip:${dependency.karaf.version} in redhat-techpreview-all-repository (http://maven.repository.redhat.com/techpreview/all/), Could not find artifact org.apache.karaf:apache-karaf:zip:${dependency.karaf.version} in jboss-nexus-ea (https://repository.jboss.org/nexus/content/repositories/ea/), Could not find artifact org.apache.karaf:apache-karaf:zip:${dependency.karaf.version} in central (http://repo1.maven.org/maven2/)]
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:720) [pax-url-aether-2.5.2.jar:na]
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:659) [pax-url-aether-2.5.2.jar:na]
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:600) [pax-url-aether-2.5.2.jar:na]
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:567) [pax-url-aether-2.5.2.jar:na]
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:557) [pax-url-aether-2.5.2.jar:na]
+	at org.ops4j.pax.url.mvn.internal.Connection.getInputStream(Connection.java:123) [pax-url-aether-2.5.2.jar:na]
+	at java.net.URL.openStream(URL.java:1038) [na:1.8.0_20]
+	at org.ops4j.pax.exam.karaf.container.internal.ArchiveExtractor.extractZipDistribution(ArchiveExtractor.java:88) [pax-exam-container-karaf-5.0.0-SNAPSHOT.jar:na]
+	at org.ops4j.pax.exam.karaf.container.internal.ArchiveExtractor.extract(ArchiveExtractor.java:67) [pax-exam-container-karaf-5.0.0-SNAPSHOT.jar:na]
+	at org.ops4j.pax.exam.karaf.container.internal.KarafTestContainer.start(KarafTestContainer.java:158) [pax-exam-container-karaf-5.0.0-SNAPSHOT.jar:na]
+	at org.ops4j.pax.exam.spi.reactors.AllConfinedStagedReactor.runTest(AllConfinedStagedReactor.java:89) [pax-exam-spi-5.0.0-SNAPSHOT.jar:na]
+	at org.ops4j.pax.exam.junit.DriverExtension.delegateMethodBlock(DriverExtension.java:177) [pax-exam-junit4-5.0.0-SNAPSHOT.jar:na]
+	at org.ops4j.pax.exam.junit.ExtensibleRunner.runChild(ExtensibleRunner.java:98) [pax-exam-junit4-5.0.0-SNAPSHOT.jar:na]
+	at org.ops4j.pax.exam.junit.ExtensibleRunner.runChild(ExtensibleRunner.java:34) [pax-exam-junit4-5.0.0-SNAPSHOT.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.ops4j.pax.exam.junit.ExtensibleRunner$1.evaluate(ExtensibleRunner.java:59) [pax-exam-junit4-5.0.0-SNAPSHOT.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.ops4j.pax.exam.junit.PaxExam.run(PaxExam.java:78) [pax-exam-junit4-5.0.0-SNAPSHOT.jar:na]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367) [surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274) [surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238) [surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161) [surefire-junit4-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290) [surefire-booter-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242) [surefire-booter-2.19.1.jar:2.19.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121) [surefire-booter-2.19.1.jar:2.19.1]
+Caused by: shaded.org.eclipse.aether.resolution.ArtifactResolutionException: Error resolving artifact org.apache.karaf:apache-karaf:zip:${dependency.karaf.version}
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444) ~[pax-url-aether-2.5.2.jar:na]
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246) ~[pax-url-aether-2.5.2.jar:na]
+	at shaded.org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223) ~[pax-url-aether-2.5.2.jar:na]
+	at shaded.org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294) ~[pax-url-aether-2.5.2.jar:na]
+	at org.ops4j.pax.url.mvn.internal.AetherBasedResolver.resolve(AetherBasedResolver.java:705) [pax-url-aether-2.5.2.jar:na]
+	... 28 common frames omitted
+20:54:27.537 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+21:05:57.732 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+21:05:57.789 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+21:05:58.129 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+21:06:00.521 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+21:06:00.553 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+21:06:00.555 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 65c7a4d6-110e-461c-a6d0-908aff64290b timout: [ RelativeTimeout value = 180000 ]
+21:06:17.696 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+21:06:17.696 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+21:06:18.969 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+21:21:03.183 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+21:21:03.312 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+21:21:04.119 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+21:21:11.010 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+21:21:11.610 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+21:21:11.611 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: bfb8301a-8a83-40e8-a279-3bcb6999fa36 timout: [ RelativeTimeout value = 180000 ]
+21:21:29.717 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+21:21:29.717 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+21:21:30.590 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+21:23:46.429 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+21:23:46.476 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+21:23:46.816 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+21:23:49.654 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+21:23:49.712 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+21:23:49.713 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 87f6042d-f495-4793-ab4b-98c2c6a27e89 timout: [ RelativeTimeout value = 180000 ]
+21:24:06.146 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+21:24:06.146 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+21:24:06.894 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+21:28:35.629 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+21:28:35.666 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+21:28:35.996 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+21:28:39.024 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+21:28:39.060 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+21:28:39.062 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 1aa21561-7e10-4842-8cbd-65eb2e1c1b5b timout: [ RelativeTimeout value = 180000 ]
+21:28:57.276 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+21:28:57.276 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+21:28:58.042 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+21:50:31.582 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+21:50:31.613 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+21:50:31.869 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+21:50:34.517 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+21:50:34.555 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+21:50:34.556 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 8cd3c184-c6d7-4814-a2a8-f723053ca4f5 timout: [ RelativeTimeout value = 180000 ]
+21:50:52.137 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+21:50:52.137 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+21:50:52.866 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+21:51:19.310 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+21:51:19.348 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+21:51:19.852 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+21:51:23.243 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+21:51:23.284 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+21:51:23.285 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 42da1a13-7374-4775-b14d-17d6c590306c timout: [ RelativeTimeout value = 180000 ]
+21:51:50.208 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+21:51:50.208 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+21:51:50.883 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+21:52:20.970 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+21:52:20.996 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+21:52:21.227 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+21:52:23.512 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+21:52:23.541 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+21:52:23.541 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: b2897f87-001d-430c-b908-78b6e938f16f timout: [ RelativeTimeout value = 180000 ]
+21:52:38.486 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+21:52:38.486 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+21:52:39.184 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+21:53:35.311 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+21:53:35.344 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+21:53:35.691 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+21:53:38.708 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+21:53:38.744 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+21:53:38.745 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 8913ebc8-2ca2-4389-bbe7-0ab5fe7ab47e timout: [ RelativeTimeout value = 180000 ]
+21:53:58.501 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+21:53:58.502 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+21:53:59.187 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+21:54:38.716 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+21:54:38.763 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+21:54:39.194 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+21:54:42.923 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+21:54:42.968 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+21:54:42.969 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: b5a4bf33-bd2d-4dc9-b101-302174c1c3df timout: [ RelativeTimeout value = 180000 ]
+21:55:14.283 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+21:55:14.283 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+21:55:15.540 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+22:04:53.337 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:04:53.363 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:04:53.643 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:04:56.056 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:04:56.080 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:04:56.081 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 0c048b57-a243-4b47-a255-20a7b1723943 timout: [ RelativeTimeout value = 180000 ]
+22:05:24.096 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:05:24.096 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:05:24.708 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:05:26.657 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:05:26.675 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:05:26.676 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: a3eb0f10-9c84-4dd9-b06c-1a3581151552 timout: [ RelativeTimeout value = 180000 ]
+22:06:14.966 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:06:15.015 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:06:15.288 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:06:17.780 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:06:17.804 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:06:17.805 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 37ce911b-f837-43d6-ad25-9f6489869e88 timout: [ RelativeTimeout value = 180000 ]
+22:06:32.724 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:06:32.725 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:06:33.434 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:07:38.116 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:07:38.142 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:07:38.463 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:07:41.277 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:07:41.311 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:07:41.312 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 227c338a-dffe-4fd8-a9d2-5cbd74a97e00 timout: [ RelativeTimeout value = 180000 ]
+22:07:58.777 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:07:58.777 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:07:59.475 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:08:02.138 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:08:02.153 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:08:02.153 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 4a273746-5a9b-4a8d-b267-7dc91cc88df1 timout: [ RelativeTimeout value = 180000 ]
+22:08:18.787 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:08:18.787 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:08:18.790 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:08:18.790 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:08:19.456 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+22:09:44.169 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:09:44.203 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:09:44.479 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:09:47.276 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:09:47.318 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:09:47.320 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: d229bfba-5ddc-4e25-b6bf-72f264cf8c72 timout: [ RelativeTimeout value = 180000 ]
+22:10:35.391 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:10:35.422 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:10:35.660 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:10:38.052 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:10:38.085 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:10:38.086 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 589474ba-9c47-4ffe-8da0-7d1bc1f64280 timout: [ RelativeTimeout value = 180000 ]
+22:10:53.129 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:10:53.129 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:10:53.926 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:10:56.262 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:10:56.282 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:10:56.283 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: f49b1a2c-5687-4c92-8606-8709264a8957 timout: [ RelativeTimeout value = 180000 ]
+22:11:11.598 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:11:11.598 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:11:11.601 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:11:11.601 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:11:12.284 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+22:14:35.378 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:14:35.423 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:14:35.713 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:14:39.216 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:14:39.274 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:14:39.275 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: ec52ae65-17bd-4f19-bcb6-67ee6348ff93 timout: [ RelativeTimeout value = 180000 ]
+22:14:59.584 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:14:59.585 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:15:00.443 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:15:02.775 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:15:02.792 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:15:02.793 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: dd436f8a-f2ec-4061-a230-8a749711826d timout: [ RelativeTimeout value = 180000 ]
+22:15:18.657 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:15:18.658 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:15:18.661 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:15:18.661 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:15:19.794 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+22:16:00.805 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:16:00.838 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:16:01.094 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:16:03.698 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:16:03.735 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:16:03.736 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 13c39140-979d-470e-a37a-64077f64048c timout: [ RelativeTimeout value = 180000 ]
+22:16:24.688 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:16:24.688 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:16:25.438 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:16:27.778 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:16:27.798 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:16:27.798 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: db269210-dfea-4e2c-99ef-daa0749b417f timout: [ RelativeTimeout value = 180000 ]
+22:17:18.611 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:17:18.647 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:17:18.933 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:17:21.801 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:17:21.833 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:17:21.834 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: fa3924dc-855b-4c36-a40d-22a1fabd1074 timout: [ RelativeTimeout value = 180000 ]
+22:18:29.854 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:18:29.903 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:18:30.443 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:18:34.262 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:18:34.330 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:18:34.333 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: a3f94bb5-a995-437e-a9f2-0e8ca25e6e19 timout: [ RelativeTimeout value = 180000 ]
+22:18:55.414 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:18:55.414 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:18:56.209 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:18:58.718 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:18:58.735 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:18:58.735 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 2292ba96-3ea6-4dea-8ff7-f254316834a6 timout: [ RelativeTimeout value = 180000 ]
+22:19:14.020 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:19:14.021 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:19:14.023 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:19:14.024 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:19:14.782 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+22:20:09.217 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:20:09.266 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:20:09.592 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:20:13.117 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:20:13.172 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:20:13.175 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 2604ae3f-665b-4348-afac-63375d58a1a3 timout: [ RelativeTimeout value = 180000 ]
+22:20:36.426 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:20:36.427 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:20:38.001 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:20:40.852 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:20:40.873 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:20:40.874 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 3ad0ccb3-d575-4950-9bef-ffbe874681ff timout: [ RelativeTimeout value = 180000 ]
+22:21:31.161 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:21:31.196 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:21:31.451 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:21:34.012 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:21:34.045 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:21:34.046 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 49ccf268-0f92-4d37-ba76-2c51c2411f39 timout: [ RelativeTimeout value = 180000 ]
+22:21:50.549 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:21:50.549 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:21:51.369 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:21:53.603 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:21:53.622 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:21:53.622 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: aad68b34-693c-470e-9777-65324390f9f6 timout: [ RelativeTimeout value = 180000 ]
+22:22:08.968 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:22:08.968 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:22:08.971 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:22:08.971 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:22:09.714 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+22:22:37.759 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:22:37.792 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:22:38.087 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:22:40.543 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:22:40.578 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:22:40.579 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 370cb053-235d-400b-9d58-afa9affe1f78 timout: [ RelativeTimeout value = 180000 ]
+22:23:20.659 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:23:20.688 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:23:20.914 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:23:23.128 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:23:23.150 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:23:23.151 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 028e11fb-bc79-4789-9d07-ece4ce9e4360 timout: [ RelativeTimeout value = 180000 ]
+22:24:39.507 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:24:39.541 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:24:39.791 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:24:42.393 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:24:42.427 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:24:42.429 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 6df8c482-a002-4f56-a545-c3082a82e716 timout: [ RelativeTimeout value = 180000 ]
+22:25:01.223 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:25:01.223 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:25:01.995 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:25:04.193 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:25:04.212 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:25:04.213 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 36c99b37-2480-4af5-bb08-cd29c2ef4fb9 timout: [ RelativeTimeout value = 180000 ]
+22:26:19.550 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:26:19.593 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:26:19.853 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:26:22.514 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:26:22.543 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:26:22.544 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 0bb98bd8-c5e7-4224-8870-f2142a6316f4 timout: [ RelativeTimeout value = 180000 ]
+22:26:37.658 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:26:37.658 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:26:38.269 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:26:39.921 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:26:39.936 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:26:39.936 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: d90223c8-c988-48f7-a43a-ebd5dc767470 timout: [ RelativeTimeout value = 180000 ]
+22:26:54.905 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:26:54.905 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:26:54.909 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:26:54.909 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:26:55.522 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+22:29:55.622 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:29:55.672 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:29:56.034 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:29:59.743 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:29:59.790 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:29:59.792 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: c20e0cfb-481d-45d1-add1-32ee180639ad timout: [ RelativeTimeout value = 180000 ]
+22:30:18.939 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:30:18.940 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:30:19.772 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:30:25.425 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:30:25.438 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:30:25.438 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 3256b23c-5839-4022-921f-e209895d300e timout: [ RelativeTimeout value = 180000 ]
+22:30:44.114 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:30:44.114 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:30:44.116 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:30:44.117 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:30:44.687 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+22:49:42.580 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:49:42.624 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:49:42.933 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:49:45.987 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:49:46.038 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:49:46.039 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 0db2e651-2544-46ad-87ba-44a509ca775a timout: [ RelativeTimeout value = 180000 ]
+22:50:03.914 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:50:03.914 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:50:04.759 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:50:06.865 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:50:06.882 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:50:06.883 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: cec83a09-a508-4238-9f0b-80dbcf6e68b1 timout: [ RelativeTimeout value = 180000 ]
+22:51:31.884 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:51:31.915 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:51:32.382 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:51:38.091 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:51:38.125 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:51:38.126 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 0d4609d9-2f1d-49e8-bfb9-a47dc98d7127 timout: [ RelativeTimeout value = 180000 ]
+22:51:56.311 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:51:56.311 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:51:57.063 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:51:59.166 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:51:59.184 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:51:59.184 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: acd1cf62-12a5-4c15-9c97-526466849c36 timout: [ RelativeTimeout value = 180000 ]
+22:52:14.248 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:52:14.248 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:52:14.251 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:52:14.251 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:52:14.957 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:52:16.969 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:52:16.983 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:52:16.984 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: e9db1d8a-1bd7-4b38-887c-82f6e1c521e6 timout: [ RelativeTimeout value = 180000 ]
+22:54:33.344 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:54:33.381 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:54:33.678 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:54:36.488 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:54:36.520 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:54:36.522 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: d37b6dbf-417e-4ba9-9a5a-fc5a031d11c4 timout: [ RelativeTimeout value = 180000 ]
+22:54:54.550 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:54:54.551 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:54:55.336 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:54:57.687 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:54:57.707 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:54:57.707 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 39bb8b9f-1af4-4c5f-a0d4-dd0fdbdc5813 timout: [ RelativeTimeout value = 180000 ]
+22:57:54.989 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+22:57:55.016 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+22:57:55.240 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:57:57.816 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:57:57.849 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:57:57.850 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 7724a867-53c8-423d-bd2c-96f1a63cac42 timout: [ RelativeTimeout value = 180000 ]
+22:58:13.159 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:58:13.159 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:58:14.057 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+22:58:16.317 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+22:58:16.334 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+22:58:16.335 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 2f234cf0-88e2-4b0a-8204-41992a7365d3 timout: [ RelativeTimeout value = 180000 ]
+22:58:30.969 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:58:30.969 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:58:30.972 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+22:58:30.972 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+22:58:31.638 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+23:11:47.534 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+23:11:47.562 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+23:11:47.822 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+23:11:52.649 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+23:11:52.703 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+23:11:52.703 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 87745b40-b3b8-4c49-b769-4c5581691c37 timout: [ RelativeTimeout value = 180000 ]
+23:12:35.187 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+23:12:35.219 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+23:12:35.520 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+23:12:38.085 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+23:12:38.112 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+23:12:38.113 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 3fd4d08a-3568-467a-b655-24a0a7a5e06a timout: [ RelativeTimeout value = 180000 ]
+23:12:54.286 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+23:12:54.286 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+23:13:57.581 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+23:13:57.612 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+23:13:57.873 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+23:14:00.857 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+23:14:00.901 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+23:14:00.903 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: eccb3e48-b87a-4bb2-b609-d392aa78bb1b timout: [ RelativeTimeout value = 180000 ]
+23:14:16.932 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+23:14:16.933 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+23:14:17.621 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+23:14:19.694 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+23:14:19.710 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+23:14:19.711 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: d8b48d8b-961b-4628-b01e-d96f2f41663d timout: [ RelativeTimeout value = 180000 ]
+23:14:34.457 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+23:14:34.457 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+23:14:34.460 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+23:14:34.460 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+23:14:35.065 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+23:35:17.271 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+23:35:17.307 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+23:35:17.626 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+23:35:20.593 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+23:35:20.651 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+23:35:20.654 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: ad14de7c-65fb-4ca7-a860-6f405cb42490 timout: [ RelativeTimeout value = 180000 ]
+23:35:41.911 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+23:35:41.911 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+23:35:42.743 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+23:35:48.271 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+23:35:48.288 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+23:35:48.289 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 0c360951-bea3-4b07-a013-8f4a8917925b timout: [ RelativeTimeout value = 180000 ]
+23:36:04.492 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+23:36:04.492 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+23:36:04.495 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+23:36:04.495 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+23:36:05.249 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+23:47:09.009 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+23:47:09.048 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+23:47:09.319 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+23:47:12.367 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+23:47:12.426 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+23:47:12.428 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 7cf862c7-0398-4ab5-96dc-c0263619c4ee timout: [ RelativeTimeout value = 180000 ]
+23:47:29.363 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+23:47:29.363 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+23:47:30.221 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+23:47:38.742 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+23:47:38.759 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+23:47:38.760 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: eefc4b36-4a15-46ca-8b47-267ab44d1c8a timout: [ RelativeTimeout value = 180000 ]
+23:48:23.617 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+23:48:23.659 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+23:48:23.886 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+23:48:26.391 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+23:48:26.421 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+23:48:26.422 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 116291e2-67ad-4d29-9f17-2351b3d3b366 timout: [ RelativeTimeout value = 180000 ]
+23:50:38.319 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+23:50:38.352 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+23:50:38.646 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+23:50:41.325 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+23:50:41.353 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+23:50:41.354 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 38b87fe5-1cf9-4603-b986-3e676473bc22 timout: [ RelativeTimeout value = 180000 ]
+23:50:55.875 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+23:50:55.876 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+23:50:56.542 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+23:50:58.490 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+23:50:58.507 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+23:50:58.507 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 5ba61ef5-63de-4294-a031-838dcca8ae82 timout: [ RelativeTimeout value = 180000 ]
+23:51:12.357 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+23:51:12.357 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+23:51:12.360 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+23:51:12.360 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+23:51:13.082 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+00:05:36.745 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+00:05:36.773 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+00:05:37.057 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:05:39.578 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:05:39.614 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:05:39.615 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: cf733308-5591-4766-8a8b-10a6c7a67f8d timout: [ RelativeTimeout value = 180000 ]
+00:05:57.504 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+00:05:57.504 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+00:05:58.295 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:06:00.604 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:06:00.621 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:06:00.622 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 1045c8b2-dac1-407d-9acb-34937bc381c9 timout: [ RelativeTimeout value = 180000 ]
+00:07:51.134 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+00:07:51.165 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+00:07:51.476 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:07:54.385 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:07:54.429 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:07:54.432 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 9e744a8a-cf49-471f-bb8d-d5491c3daf53 timout: [ RelativeTimeout value = 180000 ]
+00:08:19.207 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+00:08:19.207 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+00:08:20.239 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:08:23.658 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:08:23.676 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:08:23.676 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 7f5c3bff-a247-47a6-bde3-a966b4b9238b timout: [ RelativeTimeout value = 180000 ]
+00:08:59.765 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+00:08:59.806 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+00:09:00.054 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:09:02.263 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:09:02.304 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:09:02.305 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 77b76af8-f657-43a2-b509-5f94fdccfd1b timout: [ RelativeTimeout value = 180000 ]
+00:09:18.284 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+00:09:18.285 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+00:09:19.003 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:09:21.306 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:09:21.322 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:09:21.323 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 4ff56057-eb5f-4e82-b0c5-8b61f025b7f4 timout: [ RelativeTimeout value = 180000 ]
+00:09:37.385 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+00:09:37.386 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+00:09:37.388 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+00:09:37.389 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+00:09:38.101 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+00:10:21.101 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+00:10:21.141 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+00:10:21.493 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:10:24.218 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:10:24.252 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:10:24.253 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: e69547c6-b655-4872-a712-bece2f370076 timout: [ RelativeTimeout value = 180000 ]
+00:10:42.480 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+00:10:42.480 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+00:10:43.248 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:10:45.575 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:10:45.604 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:10:45.604 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 9a0d2e3f-e964-45bd-a219-8490ee3d934c timout: [ RelativeTimeout value = 180000 ]
+00:12:09.366 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+00:12:09.414 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+00:12:09.764 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:12:13.134 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:12:13.186 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:12:13.188 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 36b081be-c3de-4633-abec-f5b24e27cd52 timout: [ RelativeTimeout value = 180000 ]
+00:12:33.629 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+00:12:33.630 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+00:12:34.295 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:12:36.256 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:12:36.269 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:12:36.270 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 5810a246-1940-4e01-8c5b-145e864fdb30 timout: [ RelativeTimeout value = 180000 ]
+00:13:44.826 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+00:13:44.881 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+00:13:45.266 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:13:48.651 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:13:48.692 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:13:48.693 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 8971b9f6-e6eb-4fa1-9ae4-a5315d32ee2a timout: [ RelativeTimeout value = 180000 ]
+00:14:08.860 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+00:14:08.860 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+00:14:09.605 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:14:11.651 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:14:11.668 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:14:11.668 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 92b76b5a-e8ae-4b33-a589-65bd11f16a07 timout: [ RelativeTimeout value = 180000 ]
+00:16:06.308 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+00:16:06.339 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+00:16:06.662 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:16:09.173 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:16:09.206 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:16:09.209 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 117e35c5-597c-4c09-9543-42f9bf8006ce timout: [ RelativeTimeout value = 180000 ]
+00:16:29.825 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+00:16:29.825 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+00:16:30.486 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:16:32.058 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:16:32.074 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:16:32.074 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: c968b4c5-6d04-45b6-97e7-6720c2faccb1 timout: [ RelativeTimeout value = 180000 ]
+00:18:11.206 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+00:18:11.238 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+00:18:11.509 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:18:13.944 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:18:13.973 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:18:13.974 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: d875d29a-da3b-46e9-b1a7-f7678e9d5305 timout: [ RelativeTimeout value = 180000 ]
+00:18:30.372 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+00:18:30.373 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+00:19:37.929 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+00:19:37.957 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+00:19:38.195 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:19:40.262 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:19:40.290 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:19:40.291 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: 4f65650a-85ba-4e93-9b85-e9b901351e42 timout: [ RelativeTimeout value = 180000 ]
+00:19:54.711 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+00:19:54.712 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+00:19:55.368 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:19:57.254 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:19:57.271 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:19:57.272 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: f0b74663-93b5-4dfb-afc7-747501528a95 timout: [ RelativeTimeout value = 180000 ]
+00:20:12.071 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+00:20:12.071 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+00:20:12.074 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+00:20:12.074 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+00:20:12.730 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished
+00:20:33.649 [main] INFO  o.o.pax.exam.junit.DriverExtension - creating PaxExam runner for class azkaoru.karaf4.osgi.exam.samples.ds.Karaf4TestContainerITest
+00:20:33.677 [main] INFO  o.o.pax.exam.spi.DefaultExamSystem - Pax Exam System (Version: 5.0.0-SNAPSHOT) created.
+00:20:33.922 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:20:36.759 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:20:36.790 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:20:36.792 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: f949c631-e3ec-4c5a-adae-047288875904 timout: [ RelativeTimeout value = 180000 ]
+00:20:54.374 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+00:20:54.375 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+00:20:55.053 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Creating RMI registry server on 127.0.0.1:21000
+00:20:57.070 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Found 0 options when requesting OverrideJUnitBundlesOption.class
+00:20:57.086 [main] INFO  o.o.p.e.k.c.i.KarafTestContainer - Wait for test container to finish its initialization [ RelativeTimeout value = 180000 ]
+00:20:57.086 [main] INFO  o.o.p.e.r.c.RemoteBundleContextClient - Waiting for remote bundle context.. on 21000 name: b464b069-af41-4e2f-bb24-843619232bff timout: [ RelativeTimeout value = 180000 ]
+00:21:11.364 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+00:21:11.364 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+00:21:11.367 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.karaf.options.KarafDistributionConfigurationOption has not been recognized.
+00:21:11.367 [main] WARN  o.o.pax.exam.spi.DefaultExamSystem - Option org.ops4j.pax.exam.options.FrameworkStartLevelOption has not been recognized.
+00:21:12.028 [main] INFO  o.o.p.e.spi.reactors.ReactorManager - suite finished

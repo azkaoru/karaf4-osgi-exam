@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>azkaoru-karaf4-osgi-exam</groupId>
+    <artifactId>karaf4-osgi-exam</artifactId>
+	<version>1.0.0</version>
+    <name>KARAF4 OSGI Exam</name>
+    <packaging>pom</packaging>
+    <profiles>
+        <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <modules>
+                <module>karaf4-osgi-exam-build</module>
+                
+                <module>karaf4-osgi-exam-pom</module> 
+              
+                <module>karaf4-osgi-exam-samples</module>
+                
+            </modules>
+        </profile>
+        <!--
+        <profile>
+            <id>itest</id>
+            <modules>
+                <module>pom</module>
+                <module>itest</module>
+            </modules>
+        </profile>
+        -->
+    </profiles>
+   
+
+</project>
